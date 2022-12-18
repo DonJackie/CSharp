@@ -1,0 +1,6 @@
+D:\CSharp\Fig_7\Final_Fig_7_8\bin\Debug\Final_Fig_7_8.exe.config
+D:\CSharp\Fig_7\Final_Fig_7_8\bin\Debug\Final_Fig_7_8.exe
+D:\CSharp\Fig_7\Final_Fig_7_8\bin\Debug\Final_Fig_7_8.pdb
+D:\CSharp\Fig_7\Final_Fig_7_8\obj\Debug\Final_Fig_7_8.csproj.CoreCompileInputs.cache
+D:\CSharp\Fig_7\Final_Fig_7_8\obj\Debug\Final_Fig_7_8.exe
+D:\CSharp\Fig_7\Final_Fig_7_8\obj\Debug\Final_Fig_7_8.pdb
