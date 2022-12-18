@@ -1,0 +1,7 @@
+D:\CSharp\Fig_7\Final_Fig_7_7\bin\Debug\Final_Fig_7_7.exe.config
+D:\CSharp\Fig_7\Final_Fig_7_7\bin\Debug\Final_Fig_7_7.exe
+D:\CSharp\Fig_7\Final_Fig_7_7\bin\Debug\Final_Fig_7_7.pdb
+D:\CSharp\Fig_7\Final_Fig_7_7\obj\Debug\Final_Fig_7_7.csprojAssemblyReference.cache
+D:\CSharp\Fig_7\Final_Fig_7_7\obj\Debug\Final_Fig_7_7.csproj.CoreCompileInputs.cache
+D:\CSharp\Fig_7\Final_Fig_7_7\obj\Debug\Final_Fig_7_7.exe
+D:\CSharp\Fig_7\Final_Fig_7_7\obj\Debug\Final_Fig_7_7.pdb
