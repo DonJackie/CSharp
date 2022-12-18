@@ -27,6 +27,12 @@ namespace Final_Fig_8
                         $" responses[{answer}] = {responses[answer]}\n");
                 }
             }
+            Console.WriteLine($"{"Rating"}{"Frequency",10}");
+
+            for(var rating =1; rating < frequency.Length; ++rating)
+            {
+                Console.WriteLine($"{rating,6}{frequency[rating],10}");
+            }
         }
     }
 }
