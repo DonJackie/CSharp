@@ -10,26 +10,21 @@ namespace Final_Fig_8
     {
         static void Main(string[] args)
         {
-            int[] array = { 0, 0, 0, 0, 0, 0, 1, 2, 4, 2, 1 };
-            Console.WriteLine("Grade distribution:\n");
-            //Display
-            for (var counter=0; counter <array.Length; ++counter)
+            var randomNumbers = new Random();
+            var frequency = new int[7];
+            var total=0;
+
+            for (var roll = 1; roll <=60000000; ++roll)
             {
-                if(counter == 10)
-                {
-                    Console.Write("  100: ");
-                }
-                else
-                {
-                    Console.Write($"{counter * 10:D2}-{counter * 10 + 9:D2}: ");
-                }
-                for(var stars = 0; stars < array[counter]; ++stars )
-                {
-                    Console.Write("*");
-                }
-                Console.WriteLine();
+                ++frequency[randomNumbers.Next(1, 7)];
             }
-            
+            Console.WriteLine($"{"Face"}{"Frequency",10}");
+            for(var face = 1; face<frequency.Length; ++face)
+            {
+                Console.WriteLine($"{face,4}{frequency[face],10}");
+                total += frequency[face];
+            }
+            Console.WriteLine($"total result = {total}");
         }
     }
 }
