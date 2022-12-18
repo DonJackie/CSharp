@@ -10,28 +10,28 @@ namespace Final_Fig_8
     {
         static void Main(string[] args)
         {
-            int[] responses = { 1, 2, 5, 14, 3, 5, 2, 1, 3, 3, 1, 4, 3, 3, 3, 2, 3, 3, 2, 14 };
-            
-            var frequency = new int[6];
+            int[] array = { 1, 2, 3, 4, 5 };
 
-            for (var answer = 0; answer < responses.Length; ++answer)
+            Console.WriteLine("Effects of passing reference to entire array:");
+            Console.WriteLine("The values of the original array are:");
+
+            foreach( var value in array)
             {
-                try
-                {
-                    ++frequency[responses[answer]];
-                }
-                catch (IndexOutOfRangeException ex) // If it's over 6  frequency value를 over하면 예외가 뜸
-                {
-                    Console.WriteLine(ex.Message);
-                    Console.WriteLine(
-                        $" responses[{answer}] = {responses[answer]}\n");
-                }
+                Console.Write($"    {value}");
             }
-            Console.WriteLine($"{"Rating"}{"Frequency",10}");
-
-            for(var rating =1; rating < frequency.Length; ++rating)
+            ModifyArray(array);
+            Console.WriteLine("\n\nThe values of the modified array are:");
+            foreach(var value in array)
             {
-                Console.WriteLine($"{rating,6}{frequency[rating],10}");
+                Console.Write($"    {value}");
+            }
+        }
+
+        static void ModifyArray(int[] array2)
+        {
+            for (var counter = 0; counter < array2.Length; ++counter)
+            {
+                array2[counter] *= 2;
             }
         }
     }
