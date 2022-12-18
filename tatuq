@@ -1,0 +1,54 @@
+warning: CRLF will be replaced by LF in Fig_8/Final_Fig_8/Program.cs.
+The file will have its original line endings in your working directory
+[1mdiff --git a/Fig_8/.vs/Fig_8/v16/.suo b/Fig_8/.vs/Fig_8/v16/.suo[m
+[1mindex f0aca47..467f3f4 100644[m
+Binary files a/Fig_8/.vs/Fig_8/v16/.suo and b/Fig_8/.vs/Fig_8/v16/.suo differ
+[1mdiff --git a/Fig_8/Final_Fig_8/Program.cs b/Fig_8/Final_Fig_8/Program.cs[m
+[1mindex 1e14b1c..7092bd6 100644[m
+[1m--- a/Fig_8/Final_Fig_8/Program.cs[m
+[1m+++ b/Fig_8/Final_Fig_8/Program.cs[m
+[36m@@ -10,14 +10,26 @@[m [mnamespace Final_Fig_8[m
+     {[m
+         static void Main(string[] args)[m
+         {[m
+[31m-            int[] array = { 87, 68, 94, 100, 83, 78, 85, 91, 76, 87 };[m
+[31m-            int total = 0;[m
+[31m-[m
+[31m-            foreach( int number in array)[m
+[32m+[m[32m            int[] array = { 0, 0, 0, 0, 0, 0, 1, 2, 4, 2, 1 };[m
+[32m+[m[32m            Console.WriteLine("Grade distribution:\n");[m
+[32m+[m[32m            //Display[m
+[32m+[m[32m            for (var counter=0; counter <array.Length; ++counter)[m
+             {[m
+[31m-                total += number;[m
+[32m+[m[32m                if(counter == 10)[m
+[32m+[m[32m                {[m
+[32m+[m[32m                    Console.Write("  100: ");[m
+[32m+[m[32m                }[m
+[32m+[m[32m                else[m
+[32m+[m[32m                {[m
+[32m+[m[32m                    Console.Write($"{counter * 10:D2}-{counter * 10 + 9:D2}: ");[m
+[32m+[m[32m                }[m
+[32m+[m[32m                for(var stars = 0; stars < array[counter]; ++stars )[m
+[32m+[m[32m                {[m
+[32m+[m[32m                    Console.Write("*");[m
+[32m+[m[32m                }[m
+[32m+[m[32m                Console.WriteLine();[m
+             }[m
+[31m-            Console.WriteLine($"Total of array elements: {total}");[m
+[32m+[m[41m            [m
+         }[m
+     }[m
+ }[m
+[1mdiff --git a/Fig_8/Final_Fig_8/bin/Debug/Final_Fig_8.exe b/Fig_8/Final_Fig_8/bin/Debug/Final_Fig_8.exe[m
+[1mindex 2aa0fb9..0d7e9f5 100644[m
+Binary files a/Fig_8/Final_Fig_8/bin/Debug/Final_Fig_8.exe and b/Fig_8/Final_Fig_8/bin/Debug/Final_Fig_8.exe differ
+[1mdiff --git a/Fig_8/Final_Fig_8/bin/Debug/Final_Fig_8.pdb b/Fig_8/Final_Fig_8/bin/Debug/Final_Fig_8.pdb[m
+[1mindex 0f8eed9..e0c5746 100644[m
+Binary files a/Fig_8/Final_Fig_8/bin/Debug/Final_Fig_8.pdb and b/Fig_8/Final_Fig_8/bin/Debug/Final_Fig_8.pdb differ
+[1mdiff --git a/Fig_8/Final_Fig_8/obj/Debug/Final_Fig_8.exe b/Fig_8/Final_Fig_8/obj/Debug/Final_Fig_8.exe[m
+[1mindex 2aa0fb9..0d7e9f5 100644[m
+Binary files a/Fig_8/Final_Fig_8/obj/Debug/Final_Fig_8.exe and b/Fig_8/Final_Fig_8/obj/Debug/Final_Fig_8.exe differ
+[1mdiff --git a/Fig_8/Final_Fig_8/obj/Debug/Final_Fig_8.pdb b/Fig_8/Final_Fig_8/obj/Debug/Final_Fig_8.pdb[m
+[1mindex 0f8eed9..e0c5746 100644[m
+Binary files a/Fig_8/Final_Fig_8/obj/Debug/Final_Fig_8.pdb and b/Fig_8/Final_Fig_8/obj/Debug/Final_Fig_8.pdb differ
