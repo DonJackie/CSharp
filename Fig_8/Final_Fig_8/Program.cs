@@ -10,21 +10,23 @@ namespace Final_Fig_8
     {
         static void Main(string[] args)
         {
-            var randomNumbers = new Random();
-            var frequency = new int[7];
-            var total=0;
+            int[] responses = { 1, 2, 5, 14, 3, 5, 2, 1, 3, 3, 1, 4, 3, 3, 3, 2, 3, 3, 2, 14 };
+            
+            var frequency = new int[6];
 
-            for (var roll = 1; roll <=60000000; ++roll)
+            for (var answer = 0; answer < responses.Length; ++answer)
             {
-                ++frequency[randomNumbers.Next(1, 7)];
+                try
+                {
+                    ++frequency[responses[answer]];
+                }
+                catch (IndexOutOfRangeException ex) // If it's over 6  frequency value를 over하면 예외가 뜸
+                {
+                    Console.WriteLine(ex.Message);
+                    Console.WriteLine(
+                        $" responses[{answer}] = {responses[answer]}\n");
+                }
             }
-            Console.WriteLine($"{"Face"}{"Frequency",10}");
-            for(var face = 1; face<frequency.Length; ++face)
-            {
-                Console.WriteLine($"{face,4}{frequency[face],10}");
-                total += frequency[face];
-            }
-            Console.WriteLine($"total result = {total}");
         }
     }
 }
